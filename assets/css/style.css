@@ -1,0 +1,122 @@
+/* #reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { 
+  font-family: "Chakra Petch", sans-serif; 
+  background: url('../../assets/images/futebol.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+input,
+button {
+  border: none;
+  border-radius: 1.5rem;
+}
+
+img { max-width: 100%; }
+
+/* #container */
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  overflow: auto;
+}
+
+/* #header */
+#header { 
+  padding: 1rem; 
+  text-align: center;
+}
+
+.title_large {
+  font-size: 2.5rem;
+  letter-spacing: 0.4rem;
+  color: #000000;
+  margin-bottom: 1.625rem;
+  text-align: center;
+}
+
+/* #search */
+.search_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.search_form .input {
+  width: 80%; 
+  max-width: 30rem; 
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #000000;
+  font-size: 1rem;
+}
+
+.search_form .btn_search {
+  padding: 0.8rem 1.2rem;
+  background-color: #FE0000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.search_form .btn_search:hover {
+  background-color: #D70000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* #search results */
+#search_results {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  background-color: #f2f2f2;
+  border-radius: 0.6rem; 
+  padding: 1rem;
+  margin-bottom: 1rem; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.card .card_header { text-align: center; }
+
+.card .card_header img { width: 100%; }
+
+.card .card_footer { margin-top: 1.5rem; }
+
+.card .card_footer span {
+  background-color: #FE0000;
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+}
+
+.card .card_footer h3 {
+  display: inline;
+  margin-left: 0.75rem;
+}
+
+.card .card_footer p {
+  margin-top: 0.75rem;
+}
+
+/* #footer */
+#footer {
+  width: 100%;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  padding: 0.5rem 0;
+  white-space: wrap;
+}
